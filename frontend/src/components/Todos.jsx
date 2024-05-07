@@ -1,8 +1,6 @@
 import {useState} from "react";
 
 export default function Todos ({ todos }) {
-  const [todoCompleted, setTodoCompleted] = useState(false);
-
   return (
     <div>
       {todos.map((todo) => {

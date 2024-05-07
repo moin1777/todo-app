@@ -9,7 +9,6 @@ function CreateTodo () {
 
       <input type={"text"} placeholder={"title"} onChange={(e) => {
         const value = e.target.value;
-        console.log(value);
         setTitle(value);
       }}/><br/><br/>
 
@@ -31,7 +30,7 @@ function CreateTodo () {
         })
           .then(async (res) => {
             let json = await res.json();
-            alert("Todo added")
+            alert(json.msg)
           })
       }}>Add a todo</button>
 
