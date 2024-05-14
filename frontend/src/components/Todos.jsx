@@ -13,7 +13,7 @@ function Todo ({title, description, completed}) {
     <div>
       <h1>{title}</h1>
       <h1>{description}</h1>
-      <button>{completed ? "Completed" : "Mark as compledted"}</button>
+      <button>{completed ? "Completed" : "Mark as completed"}</button>
     </div>
   )
 }
